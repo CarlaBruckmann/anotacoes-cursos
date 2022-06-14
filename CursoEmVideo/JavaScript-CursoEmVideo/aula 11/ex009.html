@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIGEM</title>
+    <style>
+          body{
+            background-color: rgb(168, 231, 231);
+            font: normal 18px Arial;
+            display: grid;
+            place-items: center;
+        }
+        input {
+        font: normal 18px Arial;
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        background: white;
+        text-align: center;
+        margin: 10px 2px 20px 0;
+      }
+    </style>
+</head>
+<body>
+    <h1>Em que país você mora?</h1>
+    <input type="text" name="txtorigem" id="txtorigem">
+    <input type="button" value="Consultar" onclick="consultar()">
+    <div id="res"></div>
+
+    <script>
+
+        function consultar(){
+            var resultado = window.document.getElementById('res')
+            var pais = window.document.getElementById('txtorigem').value //.value para pegar o valor do input.
+            if (pais == 'Brasil' || pais == 'brasil') {
+                resultado.innerHTML = `Você é de ${pais}, portanto é Brasileiro!` 
+            }
+            else {
+                resultado.innerHTML = `Você é de ${pais}, postanto é Estrangeiro`
+            }
+
+        }
+       
+    </script>
+</body>
+</html>

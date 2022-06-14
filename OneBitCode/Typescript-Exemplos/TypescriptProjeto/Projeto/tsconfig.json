@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",//diretorio de saída - pasta onde o compilador vai colocar os arquivos - distribuir
+        "watch": true//fica olhando os arquivos tsc - mudanças - compilar automaticamente
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DETRAN</title>
+    <style>
+        body{
+            background-color: rgb(168, 231, 231);
+            font: normal 18px Arial;
+            display: grid;
+            place-items: start;
+        }
+        input {
+        font: normal 18px Arial;
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        background: white;
+        text-align: center;
+        margin: 10px 2px 3px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: 
+    <div>
+        <input type="number" name="txtvel" id="txtvel" />Km/h.
+    </div>
+    <input type="button" value="Verificar" id="button" onclick="calcular()" onmouseenter= "borda_branca()" onmouseout ="borda_preta()" />
+    <div id="res_vel"></div>
+    <script>
+      function calcular() {
+        var txtv = window.document.getElementById('txtvel')
+        var res = window.document.getElementById('res_vel')
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p>Sua velocidade atual é <strong>${vel}Km/h.</strong><p>`
+        if (vel > 60) {
+          res.innerHTML += '<p>Velocidade acima do permitido. Você foi <strong>multado</strong>!<p>'//precisa ter o + para concatenar com a outra frase
+        } //else {
+          //res.innerHTML += '<p>Velocidade permitida!<p>'
+        //}
+        res.innerHTML += "<p>Dirija sempre com cinto de segurança!<p>"
+      }
+
+      function borda_branca(){
+          var btn = window.document.getElementById('button');
+          btn.style.border = 'solid 2px white';
+      }
+      function borda_preta(){
+          var btn = window.document.getElementById('button');
+          btn.style.border = 'solid 2px black';
+      }
+
+    </script>
+  </body>
+</html>

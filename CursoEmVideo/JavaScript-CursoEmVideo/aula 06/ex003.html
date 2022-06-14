@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro programa</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(55, 175, 159);
+      color: white;
+      font: normal 20pt Arial;
+    }
+  </style>
+  <body>
+    <h1>Aula 06 - Exercício 003</h1>
+    <p>Manipulação de dados - CONVERSÃO DE TYPE</p>
+    <script>
+      var num1 = Number.parseInt(window.prompt('digite um numero:'));  // PROMPT SEMPRE RETORNA STRING
+      var num2 = Number.parseInt(window.prompt('digite outro numero'));  //(transforma a String que retona do Prumpt em Numero inteiro
+      var soma = num1 + num2                                 
+      
+      window.alert(`A soma entre ${num1} e ${num2} é igual a ${String(soma)}`)//converte numero da soma para string, usar quando for necessário
+                                          //$ substitui +  PRECISA USAR `` 
+      
+    </script>
+  </body>
+</html>

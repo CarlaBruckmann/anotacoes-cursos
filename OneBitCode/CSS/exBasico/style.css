@@ -1,0 +1,37 @@
+:root {
+  --azul: #2c3e50;
+  --vermelho: #e74c3c;
+  --branco: white;
+  --amarel: yellow;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: var(--azul);
+}
+h1 {
+  color: var(--branco);
+}
+h2 {
+  color: var(--amarel);
+}
+h3 {
+  background-color: var(--amarel);
+  border: solid 3px black; 
+  font-size: 24px;
+}
+ul li {
+  color: var(--branco);
+}
+.class-astronomy {
+  color: var(--vermelho);
+}
+section,
+h1,
+ul {
+  padding: 15px 40px;
+}

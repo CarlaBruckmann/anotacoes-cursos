@@ -1,0 +1,1 @@
+alert("aeiouAEIOU".indexOf(prompt("Por favor, insira uma letra:")) !== -1 ? "A letra é vogal." : "A letra é consoante.");

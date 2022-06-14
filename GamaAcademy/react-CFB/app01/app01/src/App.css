@@ -1,0 +1,11 @@
+.wrapper-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.obs{
+    font-size: 11px;
+    color: purple;
+}
